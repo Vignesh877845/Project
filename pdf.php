@@ -13,7 +13,7 @@ $query = "SELECT * FROM invoice_list";
 $result = mysqli_query($conn, $query);
 
 
-require('genrate.php');
+require('fpdf.php');
 $pdf = new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial', 'B', 12);
